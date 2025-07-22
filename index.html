@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scholar's Academy</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quintessential&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .hero {
+        background-image: url("assets/background-image.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .heading {
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      }
+      .hover img:hover {
+      cursor: pointer;
+      opacity: 0.6;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid px-4">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+          <i class="bi bi-flower3 fs-2 text-white"></i>
+          <span class="ms-2 text-white" style="font-size: 1.1rem;">Scholar's Academy</span>
+        </a>
+    
+      
+        <button
+          class="navbar-toggler ms-auto"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="academics.html">Academics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white fs-5" href="academics.html">Admissions</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="btn btn-success text-white fs-5 ms-lg-2" href="apply.html">Apply Now!</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    
+    <header class="hero">
+      <div>
+        <h1 class="display-3 text-white text-left heading">
+          Empowering Young Minds for a Brighter Tomorrow
+        </h1>
+      </div>
+    </header>
+    <main>
+      <h3 class="my-5 fs-1 text-success text-center" style="font-family: Farro, sans-serif">
+        What We Offer
+      </h3>
+      <div class="container my-5">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 p-5">
+              <i class="bi bi-award text-center mt-2 fs-1 text-success"></i>
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Qualified, caring teachers who inspire
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 p-5">
+              <i class="bi bi-backpack text-center mt-2 fs-1 text-success"></i>
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Guidance & help every step of the way
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 p-5">
+              <i
+                class="bi bi-music-note-beamed text-center mt-2 fs-1 text-success"
+              ></i>
+              <p class="card-text text-center">
+                Club to help students build skills & grow as leaders.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 p-5">
+              <i
+                class="bi bi-house-heart text-center mt-2 fs-1 text-success"
+              ></i>
+              <div class="card-body">
+                <p class="card-text text-center">
+                  A respectful, welcoming school community.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card h-100 p-5">
+              <i class="bi bi-laptop text-center mt-2 fs-1 text-success"></i>
+              <div class="card-body text-center">
+                <p class="card-text text-center">
+                  Smart tech & labs for hands-on learning.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card p-5 h-100">
+              <i class="bi bi-lightbulb text-center mt-2 fs-1 text-success"></i>
+              <div class="card-body">
+                <p class="card-text text-center">
+                  Skills & mindset for tomorrow’s world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h3 class="m-5 fs-1">Our Students' Placements</h3>
+
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img
+              src="assets/AGA khan logo.png"
+              class="rounded-circle"
+              style="width: 200px; height: 200px; object-fit: cover"
+              alt="Student 1"
+            />
+          </div>
+
+          <div class="carousel-item text-center">
+            <img
+              src="assets/NED-pakistan.png"
+              style="width: 200px; height: 200px; object-fit: cover"
+              alt="Student 2"
+            />
+          </div>
+
+          <div class="carousel-item text-center">
+            <img
+              src="assets/IBA.png"
+              style="width: 200px; height: 200px; object-fit: cover"
+              alt="Student 3"
+            />
+          </div>
+
+          <div class="carousel-item text-center">
+            <img
+              src="assets/NUST logo.png"
+              style="width: 200px; height: 200px; object-fit: cover"
+              alt="Student 4"
+            />
+          </div>
+
+          <div class="carousel-item text-center">
+            <img
+              src="assets/LUMS logo.png"
+              style="width: 200px; height: 200px; object-fit: cover"
+              alt="Student 5"
+            />
+          </div>
+        </div>
+
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            aria-hidden="true"
+            style="filter: invert(1)"
+          ></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span
+            class="carousel-control-next-icon"
+            aria-hidden="true"
+            style="filter: invert(1)"
+          ></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <br />
+      <h3 class="fs-1 m-5">What our Alumni say</h3>
+      <div class="row m-5">
+        <div class="col-lg-4 text-center">
+          <img
+            src="assets/boy.jpg"
+            width="100"
+            height="100"
+            style="object-fit: cover"
+            class="rounded-circle mb-3"
+            alt="Ali Khan"
+          />
+          <h2 class="fw-normal text-success">Ali Khan</h2>
+          <p>
+            "This institute gave me the confidence and skills to get into my
+            dream university"
+          </p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <img
+            src="assets/girl1.jpg"
+            width="100"
+            height="100"
+            style="object-fit: cover"
+            class="rounded-circle mb-3"
+            alt="Fatima Ahmed"
+          />
+          <h2 class="fw-normal text-success">Fatima Ahmed</h2>
+          <p>
+            "Amazing faculty and supportive environment. I couldn’t have done it
+            without them!"
+          </p>
+        </div>
+
+        <div class="col-lg-4 text-center">
+          <img
+            src="assets/girl2.jpg"
+            width="100"
+            height="100"
+            style="object-fit: cover"
+            class="rounded-circle mb-3"
+            alt="Sara Rizvi"
+          />
+          <h2 class="fw-normal text-success">Sara Rizvi</h2>
+          <p>
+            "Their placement support is excellent. I’m proud to be an alumna of
+            this academy."
+          </p>
+        </div>
+      </div>
+
+      <h3
+        class="m-5 fs-1 text-center"
+        style="font-family: Quintessential, serif; font-weight: 500"
+      >
+        Upcoming Events
+      </h3>
+
+      <div
+        class="container my-5 d-flex flex-column flex-lg-row justify-content-evenly align-items-center"
+      >
+        >
+        <div>
+          <h3
+            style="font-family: 'Times New Roman', Times, serif"
+            class="m-3 fs-2"
+          >
+            Chess Championship
+          </h3>
+          <p class="m-3">
+            “Put your strategy skills to the ultimate test! Join the Annual
+            Inter-School Chess Championship and compete with the best young
+            minds from across the city. Trophies, certificates, and exciting
+            prizes await the champions. Open for students of all levels —
+            beginners to masters!”
+          </p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-secondary m-3"
+            data-bs-toggle="modal"
+            data-bs-target="#chessModal"
+          >
+            Learn More
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="chessModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-success" id="exampleModalLabel">
+                    Chess Championship
+                    <span class="text-secondary"> — Event Details</span>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <i class="bi bi-calendar text-success fs-3"></i> 22nd
+                    September 2025
+                  </p>
+                  <p>
+                    <i class="bi bi-clock text-success fs-3"></i> 10:00 AM –
+                    4:00 PM
+                  </p>
+                  <p>
+                    <i class="bi bi-house text-success fs-3"></i> Main
+                    Auditorium, Scholar's Academy, Karachi
+                  </p>
+
+                  <p>
+                    <i class="bi bi-pencil-square text-success fs-3"></i>
+                    Register before 15th September 2025 to secure your place.
+                  </p>
+                  <p>
+                    <i class="bi bi-trophy text-success fs-3"></i>
+                    Trophy & certificate for the Champions
+                  </p>
+                </div>
+
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="assets/chess.jpg"
+            class="m-5 img-fluid"
+            style="max-width: 400px; object-fit: cover"
+            alt="Chess Championship"
+          />
+        </div>
+      </div>
+
+      <!-- Event 2 -->
+
+      <div
+        class="container my-5 d-flex flex-column flex-lg-row justify-content-evenly align-items-center"
+      >
+        <div>
+          <img
+            src="assets/sports day.jpg"
+            class="m-5 img-fluid"
+            style="max-width: 400px; object-fit: cover"
+            alt="Sports day"
+          />
+        </div>
+        <div>
+          <h3
+            style="font-family: 'Times New Roman', Times, serif"
+            class="m-3 fs-2"
+          >
+            Annual Sports Day 2025
+          </h3>
+          <p class="m-3">
+            “Join us for a day full of fun, sportsmanship, and healthy
+            competition! Our Annual Sports Day brings students together to
+            compete in track events, team games, and friendly matches. Trophies,
+            medals, and certificates await the champions!”
+          </p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-secondary m-3"
+            data-bs-toggle="modal"
+            data-bs-target="#sportsModal"
+          >
+            Learn More
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="sportsModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-primary" id="exampleModalLabel">
+                    Sports Day
+                    <span class="text-secondary"> — Event Details</span>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <i class="bi bi-calendar text-primary fs-3"></i> 15th
+                    November 2025
+                  </p>
+                  <p>
+                    <i class="bi bi-clock text-primary fs-3"></i> 9:00 AM – 4:00
+                    PM
+                  </p>
+                  <p>
+                    <i class="bi bi-house text-primary fs-3"></i> School Sports
+                    Ground
+                  </p>
+
+                  <p>
+                    <i class="bi bi-pencil-square text-primary fs-3"></i>
+                    Open to all students — parents & families welcome to cheer!
+                  </p>
+                </div>
+
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Event 3 -->
+
+      <div
+        class="container my-5 d-flex flex-column flex-lg-row justify-content-evenly align-items-center"
+      >
+        <div>
+          <h3
+            style="font-family: 'Times New Roman', Times, serif"
+            class="m-3 fs-2"
+          >
+            Merit-Based Scholarship Test 2025
+          </h3>
+          <p class="m-3">
+            Appear in our Scholarship Test 2025 and win up to 50% off your
+            tuition fees! Open to all students. Don’t miss this chance to ease
+            your academic journey with financial support
+          </p>
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn btn-secondary m-3"
+            data-bs-toggle="modal"
+            data-bs-target="#testModal"
+          >
+            Learn More
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="testModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title text-info" id="exampleModalLabel">
+                    Scholarship Test
+                    <span class="text-secondary"> — Event Details</span>
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    <i class="bi bi-calendar text-info fs-3"></i> 5th October
+                    2025
+                  </p>
+                  <p>
+                    <i class="bi bi-clock text-info fs-3"></i> 10:00 AM – 1:00
+                    PM
+                  </p>
+                  <p>
+                    <i class="bi bi-house text-info fs-3"></i> Main Campus,
+                    Karachi
+                  </p>
+
+                  <p>
+                    <i class="bi bi-pencil-square text-info fs-3"></i>
+                    Who can apply? <br />
+                    Open for all new and existing students applying for any
+                    course.
+                  </p>
+                  <p>
+                    <i class="bi bi-trophy text-info fs-3"></i>
+                    Top scorers can win up to 50% scholarship on tuition fees.
+                    Merit certificates for high achievers.
+                  </p>
+                </div>
+
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            src="assets/scholarship.jpg"
+            class="m-5 img-fluid"
+            style="max-width: 400px; object-fit: cover"
+            alt="scholarship"
+          />
+        </div>
+      </div>
+
+      <!-- accordian -->
+      <section class="container my-5">
+        <h3 class="fs-1 mb-4">Frequently Asked Questions</h3>
+
+        <div class="accordion" id="faqAccordion">
+          <!-- Question 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseOne"
+                aria-expanded="true"
+                aria-controls="faqCollapseOne"
+              >
+                How can I apply for admission?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="faqHeadingOne"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                You can apply online through our official website or visit our
+                campus to collect an admission form. For any help, contact our
+                Admissions Office.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseTwo"
+                aria-expanded="false"
+                aria-controls="faqCollapseTwo"
+              >
+                What grades and programs do you offer?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingTwo"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                We offer classes from Grade 6 to Grade 12, covering Matric, O/A
+                Levels, and specialized preparatory programs for university
+                entrance exams.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseThree"
+                aria-expanded="false"
+                aria-controls="faqCollapseThree"
+              >
+                Is there any scholarship program available?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingThree"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Yes! We offer merit-based scholarships through our annual
+                Scholarship Test. Top scorers can get up to 50% fee waiver.
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faqCollapseFour"
+                aria-expanded="false"
+                aria-controls="faqCollapseFour"
+              >
+                Do you have any extra-curricular activities?
+              </button>
+            </h2>
+            <div
+              id="faqCollapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="faqHeadingFour"
+              data-bs-parent="#faqAccordion"
+            >
+              <div class="accordion-body">
+                Absolutely! We organize sports days, chess championships,
+                debates, cultural festivals, and more to help students grow
+                beyond academics.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container my-5">
+        <h3 class="fs-1 mb-4">Our School Gallery</h3>
+
+        <div class="row g-3">
+          <!-- Gallery Item 1 -->
+          <div class="col-md-4 hover">
+            <img
+              src="assets/audi.jpg"
+              class="img-fluid rounded shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalAudi"
+              alt="Auditorium"
+              
+              style="width: 400px; height:500px; object-fit: cover;"/>
+          </div>
+
+          <!-- Gallery Item 2 -->
+          <div class="col-md-4 hover">
+            <img
+              src="assets/classroom.jpg"
+              class="img-fluid rounded shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalClassroom"
+              alt="Classroom"
+              style="width: 400px; height:500px; object-fit: cover;"
+            />
+          </div>
+
+          <!-- Gallery Item 3 -->
+          <div class="col-md-4 hover">
+            <img
+              src="assets/school.jpg"
+              class="img-fluid rounded shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalSchool"
+              alt="school"
+              style="width: 400px; height:500px; object-fit: cover;"
+            />
+          </div>
+          <!-- Gallery Item 4 -->
+          <div class="col-md-4 hover">
+            <img
+              src="assets/library (1).jpg"
+              class="img-fluid rounded shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modallibrary"
+              alt="library"
+              style="width: 400px; height:500px; object-fit: cover;"
+            />
+          </div>
+          <!-- Gallery Item 5 -->
+          <div class="col-md-4 hover">
+            <img
+              src="assets/cafe.jpg"
+              class="img-fluid rounded shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalcafe"
+              alt="cafe"
+              style="width: 400px; height:500px; object-fit: cover;"
+            />
+          </div>
+          <!-- Gallery Item 6 -->
+          <div class="col-md-4 hover">
+            <img
+              src="assets/playground.jpg"
+              class="img-fluid rounded shadow-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#modalplayground"
+              alt="playground"
+              style="width: 400px; height:500px; object-fit: cover;"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ✅ Modal 1 -->
+      <div class="modal fade" id="modalAudi" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img
+                src="assets/audi.jpg"
+                class="img-fluid w-100"
+                alt="Auditorium"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Modal 2 -->
+      <div
+        class="modal fade"
+        id="modalClassroom"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img
+                src="assets/classroom.jpg"
+                class="img-fluid w-100"
+                alt="Classroom"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Modal 3 -->
+      <div class="modal fade" id="modalSchool" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img
+                src="assets/school.jpg"
+                class="img-fluid w-100"
+                alt="School"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal-4 -->
+      <div
+        class="modal fade"
+        id="modallibrary"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img
+                src="assets/library (1).jpg"
+                class="img-fluid w-100"
+                alt="library"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal 5 -->
+      <div class="modal fade" id="modalcafe" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img src="assets/cafe.jpg" class="img-fluid w-100" alt="cafe" />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- modal 6 -->
+      <div
+        class="modal fade"
+        id="modalplayground"
+        tabindex="-1"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <img
+                src="assets/playground.jpg"
+                class="img-fluid w-100"
+                alt="playground"
+              />
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <footer class="bg-dark text-light pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-3">
+        <h5>Scholar's Academy</h5>
+        <p>
+          Empowering young minds for a brighter tomorrow.
+        </p>
+        <p>
+           Address: 123 Main Street, Karachi<br>
+           Phone: +23456789<br>
+           Email: info@scholarsacademy.edu.pk
+        </p>
+      </div>
+
+
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
+          <li><a href="about.html" class="text-light text-decoration-none">About</a></li>
+          <li><a href="academics.html" class="text-light text-decoration-none">Academics</a></li>
+          <li><a href="admissions.html" class="text-light text-decoration-none">Admissions</a></li>
+      
+          <li><a href="apply.html" class="text-light text-decoration-none">Apply Now</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <h5>Connect With Us</h5>
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+      </div>
+    </div>
+
+    <hr class="border-light" />
+    <p class="text-center mb-0">&copy; 2025 Scholar's Academy. All rights reserved.</p>
+  </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
